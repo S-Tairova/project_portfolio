@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border: none;
+}
+.navbar-toggler:focus {
+    border-color:white; 
+    outline: none; 
+    box-shadow: none; 
+}
+.navbar-toggler {
+    border-color: white; 
+}
+#main-con {
+    width: 100%;
+    min-height: 300px;
+    position: fixed;
+    top: 0;
+}
+
+.card-body {
+    min-height: 300px;
+}
+
+.card-body h3 {
+    font-size: 2rem;
+    color: rgba(252, 231, 4, 0.885);
+    padding-left: 2rem;
+}
+
+.hid-con1 {
+    width: 60%;
+}
+
+.card-body ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body ul a {
+    text-decoration: none;
+}
+
+.card-body ul li {
+    color: white;
+}
+
+.hid-con2 {
+    margin-top: 28%;
+    margin-left: 3rem;
+}
+.section{
+    width: 100%; 
+    
+    position: relative;
+    top: 100vh;
+    z-index: 2;
+}
+
+#content-con {
+    width: 100%; 
+    min-height: 400px; 
+    background-color: #f1f0f0;
+}
+
+#content-con h1 {
+    padding: 4rem; 
+    font-size: 3rem; 
+    font-weight: bold;
+    color: rgb(47, 47, 100);
+}
+#cvButton{
+    background-color:rgba(252, 231, 4, 0.885); 
+    color:rgb(47, 47, 100);
+}
+#cvButton:active {
+    background-color: rgb(47, 47, 100);
+    color: rgba(252, 231, 4, 0.885);
+}
+.side-bar {
+    position: fixed; 
+    top: 50%; /* Dikeyde ortalamak için */
+    right: 0; /* Ekranda sol tarafta sabitle */
+    transform: translateY(-50%); /* Dikeyde tam ortalamak için */
+
+    display: flex; /* Flexbox kullanımı */
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Yatayda ortalamak için */
+    justify-content: center;
+    
+    width: 40px;
+    height: 180px;
+    background-color: rgba(252, 231, 4, 0.885);
+}
+
+.side-bar ul {
+    list-style: none;
+    padding: 0; /* Varsayılan padding'i sıfırla */
+}
+
+.side-bar ul li {
+    padding-top: 10px;
+    margin-bottom: 10px; /* Liste öğeleri arasında boşluk */
+}
+
+.side-bar ul li img {
+    width: 100%; /* Resimleri yan barın genişliğine göre ölçekle */
+    display: block; /* Resimleri blok öğesi yap */
+}
+
+.header-lg ul li:hover {
+    color: rgba(252, 231, 4, 0.885); /* Üzerine gelindiğinde rengi değiştir */
+    cursor: pointer; /* Fare imlecini pointer olarak değiştir */
+}
+
+.header-sm {
+   display: none; 
+}
+
+
+
+#showreel-con{
+    background-color: #f1f0f0;
+    
+}
+#showreel-con h1{
+    text-align: center; 
+    padding: 2rem 0;
+    color: rgb(47, 47, 100);
+    font-size: 4rem;
+    font-weight: bold;
+}
+#hid-con4{
+    background-color: #f1f0f0;
+    width: 100%;
+}
+#hid-con4 h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(47, 47, 100);
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 0 !important;
+
+}
+.w-100 {
+    width: 100% !important;
+    height: 100vh;
+    aspect-ratio: 1/1;
+}
+#hid-con5{
+    background-color: #f1f0f0;
+    width: 100%;
+}
+#hid-con5 h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(47, 47, 100);
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 0 !important;
+
+}
+.hid-con6 h2 {
+    color: rgba(252, 231, 4, 0.885) ; 
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.hid-con6 p{
+color: white;
+line-height: normal;
+
+
+}
+.hid-con6 {
+   margin-left: 10rem;
+   
+}
+.hid-con6 div{
+margin-bottom: 2rem;
+}
+#cv-con{
+    width: 0 ; 
+    background-color: rgb(120, 124, 144);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto; /* İçerik fazlaysa kaydırmayı etkinleştir */
+    transition: left 0.5s, width 0.5s; /* Açılış/kapanış animasyonu için */
+    
+}
+/* Özgeçmişin açık olduğu durumu belirtir */
+#cv-con.open {
+    left: 0;
+    width: 70%;
+}
+
+/* Özgeçmişin kapalı olduğu durumu belirtir */
+#cv-con.closed {
+    left: -310px; /* Genişlik + 10px */
+    width: 0;
+}
+
+.xmark{
+    width: 100%;
+    position: relative;
+    
+}
+.icon-box {
+    position: absolute;
+    top: 2.2rem; 
+    right: 15px; 
+    width: 20px;
+    height: 20px;
+}
+.icon-box svg {
+    fill: white; 
+}
+
+#cv-con .row{
+    width:90%;
+    margin-left: 1rem;
+    min-height: 210px;
+}
+#cv-con .col{
+    width:100%;
+    
+}
+#cv-con .title-con{
+    padding: 1rem 0;
+}
+#cv-con h2 {
+    color: rgba(252, 231, 4, 0.885) ; 
+    font-weight: bold;
+    
+}
+#cv-con ul{
+    margin-top: 8rem;
+    list-style: none;
+}
+#cv-con p{
+color: white;
+}
+
+
+
+@media screen and (max-width:720px)  {
+    .header-lg {
+        display: none; 
+    }
+
+    .header-sm {
+        display: block; 
+        
+    }
+    #main-con {
+    width: 100% !important;
+    min-height: 300px;
+    position: static;
+    
+    }
+    .section{
+    width: 100%;
+    position: static;
+    
+    
+    }
+    .hid-con2 {
+    margin-top: 2%;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    }
+   h1{
+    padding: 0 !important;
+   }
+
+   
+    #cv-con.open {
+        width: 100%; 
+        height: 100%;
+    }
+    #cv-con .row{
+    min-height: 80px;
+    }
+
+ 
+    .hid-con6{
+        margin-left: 1rem;
+    }
+    .hid-con6 p{
+        margin-bottom: 0 !important;
+    }
+}  
+
+@media screen and (max-width: 1080px) {
+
+
+    #cv-con.open {
+        width: 100%; 
+        height: 100%;
+    }
+
+    
+}
