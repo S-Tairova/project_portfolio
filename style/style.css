@@ -310,7 +310,7 @@ color: white;
 
     #content-con .container  {
         text-align:start !important;
-        width: 95% !important; 
+        width: 100% !important; 
         
         
     }
@@ -320,7 +320,10 @@ color: white;
     #content-con .container #cvButton{
         margin-left: 28%;
     }
-
+    #content-con .container p{
+        font-size: 15px;
+        line-height: normal;
+    }
 
     #img-con .carousel-inner .carousel-item {
         height: auto;
