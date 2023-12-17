@@ -308,10 +308,20 @@ color: white;
         margin-bottom: 0 !important;
     }
 
-    #content-con .container :not(button, h1){
-        text-align: start !important;
-
+    #content-con .container  {
+        text-align:start !important;
+        width: 95% !important; 
+        
+        
     }
+    #content-con .container h1{
+        text-align: center;
+    }
+    #content-con .container #cvButton{
+        margin-left: 28%;
+    }
+
+
     #img-con .carousel-inner .carousel-item {
         height: auto;
     }
