@@ -318,7 +318,7 @@ color: white;
         text-align: center;
     }
     #content-con .container #cvButton{
-     margin: auto;
+     width: 100%;
      display: block;
     }
     #content-con .container p{
