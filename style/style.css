@@ -318,8 +318,8 @@ color: white;
         text-align: center;
     }
     #content-con .container #cvButton{
-       margin-left: 150px;
-       
+     margin: auto;
+     display: block;
     }
     #content-con .container p{
         font-size: 15px;
